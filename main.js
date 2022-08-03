@@ -21,8 +21,8 @@ if (userName){
 // var randomNumber = Math.floor(Math.random() * 8);
 // var eightBall =''
 
-var randomNumber = Math.floor(Math.random() * 8);
-var eightBall = '';
+let randomNumber = Math.floor(Math.random() * 8);
+// var eightBall = '';
 var responses = ['It is certain', 'It is decidedly so', 
 'Reply hazy try again','Cannot predict now',
 'Do not count on it','My sources say no',
