@@ -4,9 +4,10 @@ if (userName) {
 } else {
     console.log('Hello!');
 };
-// Note: Never declare variable inside conditional statement bc reassigning value of value
-// Issue: console.log() only changes when userName changes only if userName value changes in 'if' statement
-// Doesn't change when value of var=userName is changed
+/*Note: Never declare variable inside conditional statement bc reassigning value of value
+Issue: console.log() only changes when userName changes only if userName value changes in 'if' statement
+Doesn't change when value of var=userName is changed
+*/
 
 var userQuestion = 'learn to fly?';
 if (userName){
@@ -16,18 +17,15 @@ if (userName){
 /*Issue: userName must be changed in both in order for correct prompt to show
 I'm aware that I am reassigning values for userName constantly, but I don't know how to make it so that if I
 change the the value of the first var=userName , all of the following userName values would follow
-Solution: 
-/*
-
-// var randomNumber = Math.floor(Math.random() * 8);
-// var eightBall =''
+Solution: userName does not need to be redefined, just use userName as is
+*/
 
 let randomNumber = Math.floor(Math.random() * 8);
 var responses = ['It is certain', 'It is decidedly so', 
 'Reply hazy try again','Cannot predict now',
 'Do not count on it','My sources say no',
 'Outlook not so good', 'Signs point to yes'];
-var eightBall = '';
+let eightBall = '';
 
 if (randomNumber === 0) {
  eightBall = responses[0];
