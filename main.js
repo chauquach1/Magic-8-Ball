@@ -28,8 +28,6 @@ var responses = ['It is certain', 'It is decidedly so',
 'Outlook not so good', 'Signs point to yes'];
 var eightBall = '';
 
-// console.log(responses[1]);
-
 if (randomNumber === 0) {
  console.log(responses[0]);
 } else if (randomNumber === 1) {
@@ -47,3 +45,5 @@ if (randomNumber === 0) {
 } else if (randomNumber === 7) {
     console.log(responses[7]);
 }
+
+// var eightBall isn't being used. 
